@@ -1,0 +1,10 @@
+<Project>
+  <!--
+    Hide content files from Visual Studio solution explorer. Adapted from:
+   -->
+  <ItemGroup>
+    <None Update="@(None)">
+	  <Visible Condition="'%(NuGetItemType)' == 'None' and '%(NuGetPackageId)' == 'MrRabbit.HealthChecks.Container.Client'">False</Visible>
+	</None>
+  </ItemGroup>
+</Project>

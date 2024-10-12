@@ -1,0 +1,15 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: web-application-sample
+    environment:
+    - BaseAddress=http://localhost:8080
+    ports:
+    - 8080:8080
+    healthcheck:
+      test: [ "CMD", "dotnet", "/app/healthcheck.dll", "http://localhost:8080/hc" ]
+      interval: 1s
+      timeout: 2s
+      retries: 1

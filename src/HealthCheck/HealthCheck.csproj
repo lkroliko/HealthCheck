@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PublishTrimmed>False</PublishTrimmed>
+	<NuSpecFile>HealthCheck.nuspec</NuSpecFile>
+  </PropertyGroup>
+</Project>
