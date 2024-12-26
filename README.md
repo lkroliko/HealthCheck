@@ -32,10 +32,17 @@ It works on container images chiseled version too.
 Nuget packages adds content files which are copy to build output directory.
 ```
 healthcheck.dll
-healthcheck.pdb
 healthcheck.runtimeconfig
 ```
 You can run it from terminal in container
 ```
 dotnet ./healthcheck.dll
 ```
+
+### Changelog
+
+#### 9.0.0
+- added support for .net 9
+
+#### 8.0.0
+- first release

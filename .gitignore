@@ -4,6 +4,7 @@ project.lock.json
 .DS_Store
 *.pyc
 nupkg/
+*.nupkg
 
 # Visual Studio Code
 .vscode/
@@ -41,3 +42,4 @@ bld/
 msbuild.log
 msbuild.err
 msbuild.wrn
+/nugets
