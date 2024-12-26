@@ -2,7 +2,7 @@
 <package>
 	<metadata>
 		<id>MrRabbit.HealthChecks.Container.Client</id>
-		<version>8.0.0</version>
+		<version>9.0.0</version>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<projectUrl>https://github.com/lkroliko/HealthCheck</projectUrl>
 		<title>HealthCheck</title>
@@ -11,7 +11,7 @@
 		<tags>
 			HealthCheck HealthChecks Health Container Docker Podman
 		</tags>
-		<description>Health checker client for .net linux container images. Replace 'curl --silent --fail http://localhost/hc || exit 1' with '["CMD", "dotnet", "/app/healthcheck.dll", "http://localhost:8080/hc" ]'.</description>
+		<description>Health checker client for .net 8, .net 9 linux container images. Replace 'curl --silent --fail http://localhost/hc || exit 1' with '["CMD", "dotnet", "/app/healthcheck.dll", "http://localhost:8080/hc" ]'.</description>
 		<license type="expression">MIT</license>
 		<icon>icon.png</icon>
 		<readme>docs\readme.md</readme>
@@ -27,7 +27,9 @@
 		<file src="Resources\icon.png" target="" />
 		<file src="HealthCheck.props" target="build\MrRabbit.HealthChecks.Container.Client.props" />
 
-		<file src="bin\Release\net8.0\linux-x64\healthcheck.dll" target="contentFiles\any\any\HealthCheck"/>
-		<file src="bin\Release\net8.0\linux-x64\healthcheck.runtimeconfig.json" target="contentFiles\any\any\HealthCheck" />
+		<file src="bin\Release\net8.0\linux-x64\healthcheck.dll" target="contentFiles\any\net8.0\HealthCheck"/>
+		<file src="bin\Release\net8.0\linux-x64\healthcheck.runtimeconfig.json" target="contentFiles\any\net8.0\HealthCheck" />
+		<file src="bin\Release\net9.0\linux-x64\healthcheck.dll" target="contentFiles\any\net9.0\HealthCheck"/>
+		<file src="bin\Release\net9.0\linux-x64\healthcheck.runtimeconfig.json" target="contentFiles\any\net9.0\HealthCheck" />
 	</files>
 </package>

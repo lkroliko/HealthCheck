@@ -1,0 +1,9 @@
+﻿global using DotNet.Testcontainers.Containers;
+global using FluentAssertions;
+global using HealthCheck.EndToEndTests.Common;
+global using HealthCheck.EndToEndTests.Common.Attributes;
+global using HealthCheck.EndToEndTests.Common.Collections;
+global using HealthCheck.EndToEndTests.Common.Enums;
+global using HealthCheck.EndToEndTests.Common.Extensions;
+global using Microsoft.Extensions.Diagnostics.HealthChecks;
+global using Xunit.Sdk;

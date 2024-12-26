@@ -12,9 +12,8 @@ podman compose up -d
 ```
 
 Check container health status
-
 ```
-podman ls
+podman container ls
 ```
 
 Change app health status 
