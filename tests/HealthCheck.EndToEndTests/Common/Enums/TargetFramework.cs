@@ -2,6 +2,6 @@
 
 public enum TargetFramework
 {
-    DotNet8,
-    DotNet9,
+    Net8,
+    Net9,
 }

@@ -14,7 +14,7 @@ public class TestContainer
     public async Task StartAsync(TargetFramework framework)
     {
         _container = new ContainerBuilder()
-            .WithImage($"localhost/test-container:{framework.GetName()}")
+            .WithImage($"localhost/test-container:{framework.GetName().ToLower()}")
             .WithPortBinding(Port, 8080)
             .WithWaitStrategy(Wait.ForUnixContainer().UntilContainerIsHealthy())
             .Build();

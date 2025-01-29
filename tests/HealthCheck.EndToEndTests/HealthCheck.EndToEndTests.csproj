@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="cd ../../src/HealthCheck&#xD;&#xA;dotnet build -c Release -r linux-x64 --self-contained false&#xD;&#xA;dotnet pack -o ../../nugets&#xD;&#xA;copy &quot;.\..\..\nugets\*.nupkg&quot; &quot;.\..\..\tests\TestContainer.Net9&quot;&#xD;&#xA;copy &quot;.\..\..\nugets\*.nupkg&quot; &quot;.\..\..\tests\TestContainer.Net8&quot;&#xD;&#xA;cd ../../tests/HealthCheck.EndToEndTests" />
+    <Exec Command="cd ../../src/HealthCheck&#xD;&#xA;dotnet build -c Release --self-contained false&#xD;&#xA;dotnet pack -o ../../nugets&#xD;&#xA;copy &quot;.\..\..\nugets\*.nupkg&quot; &quot;.\..\..\tests\TestContainer.Net9&quot;&#xD;&#xA;copy &quot;.\..\..\nugets\*.nupkg&quot; &quot;.\..\..\tests\TestContainer.Net8&quot;&#xD;&#xA;cd ../../tests/HealthCheck.EndToEndTests" />
   </Target>
 
 </Project>

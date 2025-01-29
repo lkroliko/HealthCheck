@@ -7,7 +7,7 @@ internal class TestImageBuilder
     {
         var image = new ImageFromDockerfileBuilder()
           .WithDockerfileDirectory(CommonDirectoryPath.GetSolutionDirectory(), $"tests\\TestContainer.{framework.GetName()}")
-          .WithName($"localhost/test-container:{framework.GetName()}")
+          .WithName($"localhost/test-container:{framework.GetName().ToLower()}")
           .WithDockerfile("Dockerfile")
           .Build();
 

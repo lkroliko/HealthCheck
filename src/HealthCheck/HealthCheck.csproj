@@ -8,11 +8,12 @@
 		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 		<PublishTrimmed>False</PublishTrimmed>
 		<NuSpecFile>HealthCheck.nuspec</NuSpecFile>
-		<FileVersion>9.0.0</FileVersion>
-		<Version>9.0.0</Version>
-		<AssemblyVersion>9.0.0</AssemblyVersion>
+		<FileVersion>9.0.1</FileVersion>
+		<Version>9.0.1</Version>
+		<AssemblyVersion>9.0.1</AssemblyVersion>
 		<Copyright>MrRabbit</Copyright>
 		<AssemblyName>healthcheck</AssemblyName>
+		<PlatformTarget>anycpu</PlatformTarget>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9|AnyCPU'">
