@@ -41,6 +41,9 @@ dotnet ./healthcheck.dll
 
 ### Changelog
 
+#### 9.0.1
+- removed compilation runtime linux-x64 for any cpu support
+
 #### 9.0.0
 - added support for .net 9
 
