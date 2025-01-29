@@ -1,6 +1,5 @@
 FROM mcr.microsoft.com/dotnet/aspnet:9.0-noble-chiseled-extra AS base
 #FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
-USER app
 WORKDIR /app
 HEALTHCHECK --interval=1s --timeout=1s --retries=1 CMD [ "dotnet", "/app/healthcheck.dll", "http://localhost:8080/hc" ]
 EXPOSE 8080
@@ -17,6 +16,7 @@ RUN dotnet build "./TestContainer.Net9.csproj" -c $BUILD_CONFIGURATION -o /app/b
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
 RUN dotnet publish "./TestContainer.Net9.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN chmod -R 755 /app/publish/appsettings.json
 
 FROM base AS final
 WORKDIR /app
