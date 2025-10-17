@@ -4,4 +4,5 @@ public enum TargetFramework
 {
     Net8,
     Net9,
+    Net10,
 }

@@ -31,6 +31,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheck.EndToEndTests", "tests\HealthCheck.EndToEndTests\HealthCheck.EndToEndTests.csproj", "{0B38933C-D6E5-4280-951A-633C120F47C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestContainer.Net10", "tests\TestContainer.Net10\TestContainer.Net10.csproj", "{6F61524D-3D2B-411D-23A7-A92B65AE819A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{0B38933C-D6E5-4280-951A-633C120F47C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B38933C-D6E5-4280-951A-633C120F47C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B38933C-D6E5-4280-951A-633C120F47C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F61524D-3D2B-411D-23A7-A92B65AE819A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F61524D-3D2B-411D-23A7-A92B65AE819A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F61524D-3D2B-411D-23A7-A92B65AE819A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F61524D-3D2B-411D-23A7-A92B65AE819A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +73,7 @@ Global
 		{47F9695D-DCBE-4BC7-9988-5FB3F3E41F08} = {E92EFFE2-5765-43FF-AEA0-AB9EB2361CF7}
 		{01AB5663-BF2F-45E7-95A4-6AA20D6D6C1B} = {E92EFFE2-5765-43FF-AEA0-AB9EB2361CF7}
 		{0B38933C-D6E5-4280-951A-633C120F47C6} = {E92EFFE2-5765-43FF-AEA0-AB9EB2361CF7}
+		{6F61524D-3D2B-411D-23A7-A92B65AE819A} = {E92EFFE2-5765-43FF-AEA0-AB9EB2361CF7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {40A059D1-8162-4322-9E7F-E7879B8D59FA}
