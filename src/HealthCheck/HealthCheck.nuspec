@@ -2,7 +2,7 @@
 <package>
 	<metadata>
 		<id>MrRabbit.HealthChecks.Container.Client</id>
-		<version>10.0.0-preview</version>
+		<version>10.0.0</version>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<projectUrl>https://github.com/lkroliko/HealthCheck</projectUrl>
 		<title>HealthCheck</title>
