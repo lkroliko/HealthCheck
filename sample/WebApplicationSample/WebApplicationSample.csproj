@@ -14,7 +14,7 @@
     <PackageReference Include="AspNetCore.HealthChecks.UI" Version="9.0.0" />
     <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="9.0.0" />
     <PackageReference Include="AspNetCore.HealthChecks.UI.InMemory.Storage" Version="9.0.0" />
-	<PackageReference Include="MrRabbit.HealthChecks.Container.Client" Version="9.0.0" />
+	<PackageReference Include="MrRabbit.HealthChecks.Container.Client" Version="10.0.0" />
 	<PackageReference Include="System.Text.Json" Version="9.0.0" />
   </ItemGroup>
 
