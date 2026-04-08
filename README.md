@@ -1,54 +1,69 @@
-[![NuGet](https://img.shields.io/nuget/v/MrRabbit.HealthChecks.Container.Client)](https://www.nuget.org/packages/MrRabbit.HealthChecks.Container.Client/)
+<h1 align="center">HealthChecks.Container.Client</h1>
 
-## HealthCheck
+<p align="center">
+  <a href="https://www.nuget.org/packages/MrRabbit.HealthChecks.Container.Client/">
+    <a href="https://dotnet.microsoft.com/"><img src="https://img.shields.io/badge/.NET-10-512bd4?logo=dotnet" alt=".NET 10"></a>
+    <img src="https://img.shields.io/nuget/v/MrRabbit.HealthChecks.Container.Client" alt="NuGet" />
+    <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
+  </a>
+</p>
 
-### Problem
-In new versions of Microsoft container images you can't simply run command to install curl. 
-So how you can check status of your app?
+<p align="center">
+  Lightweight health check client for .NET containerized applications — no <code>curl</code> needed.
+</p>
 
-### Solution
-Install package
+## 🔍 Problem
+
+In newer versions of Microsoft container images (including **chiseled** variants), you can't simply install `curl` to check the status of your app. So how do you run health checks?
+
+## ✅ Solution
+
+### 1. Install the NuGet package
+
+```bash
+dotnet add package MrRabbit.HealthChecks.Container.Client
 ```
-dotnet add package MrRabbit.HealthChecks.Container.Client 
+
+### 2. Configure `docker-compose.yml`
+
+```yaml
+healthcheck:
+  test: ["CMD", "dotnet", "/[PATH TO YOUR APP]/healthcheck.dll", "ADDRESS TO HEALTH CHECK ENDPOINT"]
 ```
 
-Edit your docker-compose.yml file
-```
- healthcheck:
-      test: [ "CMD", "dotnet", "/[PATH TO YOUR APP]/healthcheck.dll", "ADDRESS TO HEALTH CHECK ENDPOINT" ]
-```
+**Example:**
 
-Example
-```
- healthcheck:
-      test: [ "CMD", "dotnet", "/app/healthcheck.dll", "http://localhost:8080/hc" ]
+```yaml
+healthcheck:
+  test: ["CMD", "dotnet", "/app/healthcheck.dll", "http://localhost:8080/hc"]
 ```
 
-It works on container images chiseled version too.
+> 💡 Works with **chiseled** container images too!
 
-### [Sample web app](https://github.com/lkroliko/HealthCheck/blob/develop/docs/SAMPLE.md)
+## 🔧 How it works
 
-### How it works
-Nuget packages adds content files which are copy to build output directory.
+The NuGet package adds content files that are copied to the build output directory:
+
 ```
 healthcheck.dll
-healthcheck.runtimeconfig
-```
-You can run it from terminal in container
-```
-dotnet ./healthcheck.dll
+healthcheck.runtimeconfig.json
 ```
 
-### Changelog
+You can also run it manually from a terminal inside the container:
 
-#### 10.0.0
-- added support for .net 10
+```bash
+dotnet ./healthcheck.dll http://localhost:8080/hc
+```
 
-#### 9.0.1
-- removed compilation runtime linux-x64 for any cpu support
+## 📖 Sample
 
-#### 9.0.0
-- added support for .net 9
+➡️ [Sample web app](https://github.com/lkroliko/HealthCheck/blob/master/docs/SAMPLE.md)
 
-#### 8.0.0
-- first release
+## 📋 Changelog
+
+| Version | Changes |
+|---------|---------|
+| **10.0.0** | Added support for .NET 10 |
+| **9.0.1** | Removed `linux-x64` runtime compilation for Any CPU support |
+| **9.0.0** | Added support for .NET 9 |
+| **8.0.0** | First release |

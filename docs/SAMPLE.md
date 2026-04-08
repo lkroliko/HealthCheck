@@ -1,22 +1,33 @@
-## Sample
+## 📖 Sample
 
-Go to sample\WebApplicationSample catalog.
-Build image
+### 1. Go to sample directory
+
+```bash
+cd sample/WebApplicationSample
 ```
+
+### 2. Build image
+
+```bash
 podman compose build
 ```
 
-Run image
-```
+### 3. Run image
+
+```bash
 podman compose up -d
 ```
 
-Check container health status
-```
+### 4. Check container health status
+
+```bash
 podman container ls
 ```
 
-Change app health status 
-- http://localhost:8080/healthy - container healthy
-- http://localhost:8080/degraded - container healthy
-- http://localhost:8080/unhealthy - container unhealthy
+### 5. Change app health status
+
+| Endpoint | Health Status |
+|----------|---------------|
+| `http://localhost:8080/healthy` | ✅ container healthy |
+| `http://localhost:8080/degraded` | ⚠️ container healthy |
+| `http://localhost:8080/unhealthy` | ❌ container unhealthy |
