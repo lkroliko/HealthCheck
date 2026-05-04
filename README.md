@@ -1,8 +1,8 @@
 <h1 align="center">HealthChecks.Container.Client</h1>
 
 <p align="center">
-  <a href="https://www.nuget.org/packages/MrRabbit.HealthChecks.Container.Client/">
-    <a href="https://dotnet.microsoft.com/"><img src="https://img.shields.io/badge/.NET-10-512bd4?logo=dotnet" alt=".NET 10"></a>
+    <a href="https://www.nuget.org/packages/MrRabbit.HealthChecks.Container.Client/">
+    <a href="https://dotnet.microsoft.com/"><img src="https://img.shields.io/badge/.NET-10-512bd4" alt=".NET 10"></a>
     <img src="https://img.shields.io/nuget/v/MrRabbit.HealthChecks.Container.Client" alt="NuGet" />
     <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
   </a>
